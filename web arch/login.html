@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #5e6486;
+      color: #e0e0e0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-container img {
+      max-height: 80px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #757da1;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      background: #e8eaf6;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #3949ab;
+      color: white;
+    }
+
+    button:hover {
+      background: #303f9f;
+    }
+
+    footer {
+      background: #3c415c;
+      color: #ccc;
+      text-align: center;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #aabbee;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="form-container">
+      <img src="logo.png" alt="Logo">
+      <p>Login Page: Kindly use credentials</p>
+      <form>
+        <label for="user">User ID</label>
+        <input type="text" id="user" name="user" required minlength="2">
+
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" required minlength="2">
+
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    Contact us at: <a href="mailto:sportshop@example.com">sportshop@example.com</a>
+  </footer>
+
+</body>
+</html>

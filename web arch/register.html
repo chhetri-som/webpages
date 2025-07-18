@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #5e6486;
+      color: #e0e0e0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-container img {
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #757da1;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: #e8eaf6;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #3949ab;
+      color: white;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #303f9f;
+    }
+
+    footer {
+      background: #3c415c;
+      color: #ccc;
+      text-align: center;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #aabbee;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="form-container">
+      <img src="logo.png" alt="Logo">
+      <p>Registration Page: Kindly fill the page</p>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="user">User ID</label>
+            <input type="text" id="user" name="user" required minlength="2">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pwd">Set Password</label>
+            <input type="password" id="pwd" name="pwd" required minlength="2">
+          </div>
+          <div class="form-group">
+            <label for="cpwd">Confirm Password</label>
+            <input type="password" id="cpwd" name="cpwd" required minlength="2">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone No.</label>
+            <input type="tel" id="phone" name="phone" required minlength="10">
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    Contact us at: <a href="mailto:sportshop@example.com">sportshop@example.com</a>
+  </footer>
+
+</body>
+</html>
