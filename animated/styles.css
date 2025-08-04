@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Nimbus Sans Becker PBla';
+    src: url('nimbus-sans/Nimbus%20Sans%20Becker%20PBla%20Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nimbus Sans Becker PBla', sans-serif;
+    font-size: 19px;
+    color: white;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 0;
+}
+
+.page:not(#home) h1 {
+    padding-left: 50px;
+}
+
+.page.active {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+/* Sliding out */
+.slide-out-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.slide-out-right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* Sliding in */
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+.slide-in-right {
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+main {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+h2 {
+    font-size: 2rem;
+    color: gray;
+}
+
+.highlight {
+    color: rgb(50, 50, 50);
+}
+
+video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-image: url(../img/tm-astro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+}
+
+header nav{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h2 {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 100px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.carousel-track .item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 240px;
+    height: 320px;
+    scroll-snap-align: center;
+    overflow: visible;
+    z-index: 0;
+}
+
+.carousel-track .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-track .item:hover img {
+    transform: scale(1.05);
+    filter: blur(8px);
+    z-index: 0;
+}
+
+.carousel-track .item figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.carousel-track .item:hover figcaption {
+    opacity: 1;
+}
+
+.carousel-track .item figcaption p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.carousel-btn.left {
+    left: 0;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+#books .item p {
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+    padding: 1rem;
+}
+
+footer div:last-child p {
+    text-align: right;
+}

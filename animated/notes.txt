@@ -1,0 +1,56 @@
+anime
+    - hyouka
+    - bunny girl senpai
+    - mob psycho
+    - your lie in april
+    - jujutsu kaisen
+    - chainsaw man
+    - mushoku tensai
+    - cyberpunk edgerunners
+    - zom 100
+    - bocchi the rock
+    - vinland saga
+    - attack on titan
+    - demon slayer
+    - assassination classroom
+    - more than a married couple
+    - akira
+    - the tatami galaxy
+    - gintama
+    - samurai champloo
+
+games
+    - GTA
+    - Black Hawk Down
+    - Mafia
+    - Yakuza
+    - Call of Duty
+    - Max Payne
+    - Sleeping Dogs
+    - Batman
+    - Detroit Become Human
+    - Stray
+    - The Finals
+    - Control
+    - Sifu
+    - Hitman
+    - Far Cry
+    - Ghost Recon
+    - Dirt Rally
+    - NFS 2015
+    - The Last of Us
+    - Marvel's Spiderman
+    - Red Dead Redemption
+
+books
+    - The Vegetarian - Han Kang
+    - dead beautiful - vyonne
+    - the year of magical thinking - joan didion
+    - a room of one's own - virginia woolf
+    - i who have never known men - jacqueline harpmen
+    - zodiac academy - carlos peckham & susanne valenti
+    - spark of the everflame - penn cole
+    - a certain hunger - chelsea g summers
+    - near to the wild heart - clarice lispector
+    - beyind the story - bts
+

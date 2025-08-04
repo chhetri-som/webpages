@@ -1,0 +1,380 @@
+0<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Background video-->
+    <video autoplay muted loop>
+        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+    <header>
+    <!--Navbar-->
+    <nav>
+        <h2>Animated</h2>
+        <ul>
+            <li><a data-target="home">Home</a></li>
+            <li><a data-target="anime">Anime</a></li>
+            <li><a data-target="games">Games</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+
+    <!--Home Page-->
+        <div id="home" class="page active">
+            <h1>Homepage</h1>
+            <p>Welcome to Animated. A personal collection of media that I have consumed over a few years. This page does not contain any ranking, it is only a list of things that I've watched/played and enjoyed. I should also mention that I am not an enthusiast nor do I indulge regularly.</p>
+        </div>
+
+    <!--Anime-->
+        <div id="anime" class="page">
+            <h1>Anime</h1>
+            <div class="carousel-container">
+                <button class="carousel-btn left" onclick="this.nextElementSibling.scrollBy({left: -700, behavior: 'smooth'})">&#10094;</button>
+                <div class="carousel-track">
+
+                    <div class="item">
+                        <img src="anime/hyouka.jpg" alt="hyouka">
+                        <figcaption>
+                            <p>Hyouka</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/psycho.jpg" alt="mob psycho">
+                        <figcaption>
+                            <p>Mob Psycho 100</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/chain.png" alt="chainsaw man">
+                        <figcaption>
+                            <p>Chainsaw Man</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/mushoku.jpg" alt="Mushoku Tensei">
+                        <figcaption>
+                            <p>Mushoku Tensei</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/bunny.jpg" alt="Rascal Does Not Dream of Bunny Girl Senapi">
+                        <figcaption>
+                            <p>Bunny Girl Senpai</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/cp.jpg" alt="CyberPunk Edgerunners">
+                        <figcaption>
+                            <p>CyberPunk Edgerunners</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/jk.jpg" alt="Jujutsu Kaisen">
+                        <figcaption>
+                            <p>Jujutsu Kaisen</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/april.jpg" alt="Your Lie in April">
+                        <figcaption>
+                            <p>Your Lie in April</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/zom.jpg" alt="ZOM 100">
+                        <figcaption>
+                            <p>ZOM 100</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/bocchi.jpg" alt="Bocchi the Rock">
+                        <figcaption>
+                            <p>Bocchi the Rock!</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/vinland.jpg" alt="Vinland Saga">
+                        <figcaption>
+                            <p>Vinland Saga</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/aot.jpg" alt="Attack on Titan">
+                        <figcaption>
+                            <p>Attack on Titan</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/demon.jpg" alt="Demon Slayer">
+                        <figcaption>
+                            <p>Demon Slayer</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/assassination.jpg" alt="Assassination Classroom">
+                        <figcaption>
+                            <p>Assassination Classroom</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/married.webp" alt="More Than a Married Couple">
+                        <figcaption>
+                            <p>More Than a Married Couple</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/akira.jpg" alt="Akira (1988)">
+                        <figcaption>
+                            <p>Akira (1988)</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/tatami.png" alt="The Tatami Galaxy">
+                        <figcaption>
+                            <p>The Tatami Galaxy</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/gintama.jpg" alt="Gintama">
+                        <figcaption>
+                            <p>Gintama</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="anime/samurai.jpg" alt="Samurai Champloo">
+                        <figcaption>
+                            <p>Samurai Champloo</p>
+                        </figcaption>
+                    </div>
+
+                </div>
+                <button class="carousel-btn right" onclick="this.previousElementSibling.scrollBy({left: 700, behavior: 'smooth'})">&#10095;</button>
+            </div>
+        </div>
+
+    <!--Games-->
+        <div id="games" class="page">
+            <h1>Games</h1>
+            <div class="carousel-container">
+                <button class="carousel-btn left" onclick="this.nextElementSibling.scrollBy({left: -700, behavior: 'smooth'})">&#10094;</button>
+                <div class="carousel-track">
+
+                    <div class="item">
+                        <img src="games/dirtrally.jpg" alt="Dirt Rally 2.0">
+                        <figcaption>
+                            <p>Dirt Rally 2.0</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/nfs.jpg" alt="Need for Speed (2015)">
+                        <figcaption>
+                            <p>Need for Speed (2015)</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/spiderman.jpg" alt="Marvel's Spider-Man'">
+                        <figcaption>
+                            <p>Marvel's Spider-Man</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/yakuza.webp" alt="Yakuza 0">
+                        <figcaption>
+                            <p>Yakuza 0</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/rdr2.webp" alt="Red Dead Redemption II">
+                        <figcaption>
+                            <p>Red Dead Redemption II</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/lastofus.webp" alt="The Last of Us">
+                        <figcaption>
+                            <p>The Last of Us</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/maxpayne.jpg" alt="Max Payne series">
+                        <figcaption>
+                            <p>Max Payne series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/ghost.jpg" alt="Ghost Recon series">
+                        <figcaption>
+                            <p>Ghost Recon series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/sleeping.jpg" alt="Sleeping Dogs">
+                        <figcaption>
+                            <p>Sleeping Dogs</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/farcry.webp" alt="Far Cry series">
+                        <figcaption>
+                            <p>Far Cry series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/cod.webp" alt="Call of Duty series">
+                        <figcaption>
+                            <p>Call of Duty Series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/finals.jpg" alt="The Finals">
+                        <figcaption>
+                            <p>The Finals</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/stray.webp" alt="Stray">
+                        <figcaption>
+                            <p>Stray</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/sifu.webp" alt="Sifu">
+                        <figcaption>
+                            <p>Sifu</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/blackhawk.jpg" alt="Black Hawk Down">
+                        <figcaption>
+                            <p>Black Hawk Down</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/gta4.jpg" alt="GTA series">
+                        <figcaption>
+                            <p>Grand Theft Auto series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/mafia2.jpg" alt="Mafia series">
+                        <figcaption>
+                            <p>Mafia series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/batman.jpg" alt="Batman Arkham series">
+                        <figcaption>
+                            <p>Batman Arkham series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/hitman.webp" alt="Hitman series">
+                        <figcaption>
+                            <p>Hitman series</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/control.webp" alt="Control">
+                        <figcaption>
+                            <p>CONTROL</p>
+                        </figcaption>
+                    </div>
+
+                    <div class="item">
+                        <img src="games/detroit.jpg" alt="Detroit Become Human">
+                        <figcaption>
+                            <p>Detroit Become Human</p>
+                        </figcaption>
+                    </div>
+
+                </div>
+                <button class="carousel-btn right" onclick="this.previousElementSibling.scrollBy({left: 700, behavior: 'smooth'})">&#10095;</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--Footer-->
+        <div>
+            <p>Copyright©</p>
+        </div>
+        <div>
+            <p>Designed by <span class="highlight">ac</span></p>
+        </div>
+    </footer>
+    <!--JavaScript to change between pages-->
+<script>
+  const links = document.querySelectorAll('nav a');
+  const pages = Array.from(document.querySelectorAll('.page'));
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      const targetId = link.getAttribute('data-target');
+      const newPage = document.getElementById(targetId);
+      const currentPage = document.querySelector('.page.active');
+
+      if (!newPage || currentPage === newPage) return;
+
+      const currentIndex = pages.indexOf(currentPage);
+      const newIndex = pages.indexOf(newPage);
+      const isForward = newIndex > currentIndex;
+
+      // Slide out current page
+      currentPage.classList.add(isForward ? 'slide-out-left' : 'slide-out-right');
+      currentPage.classList.remove('active');
+
+      // Prepare and slide in new page
+      newPage.classList.add('active', isForward ? 'slide-in-right' : 'slide-in-left');
+
+      // Cleanup classes after animation
+      setTimeout(() => {
+        currentPage.classList.remove('slide-out-left', 'slide-out-right');
+        newPage.classList.remove('slide-in-right', 'slide-in-left');
+      }, 500); // match with CSS transition
+    });
+  });
+</script>
+
+</body>
+</html>
