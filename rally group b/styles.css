@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Nimbus Sans Becker PBla';
+    src: url('fonts/nimbus-sans/Nimbus%20Sans%20Becker%20PBla%20Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Geist-Regular';
+    src: url('fonts/Geist/Geist-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Nimbus Sans Becker PBla", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    padding-top: 100px;
+    /* https://grabient.com/HQDgDAbANMDsCsBGGsLWAZgJyxtsesIMiYGJ8xwiE8UALMAEz1YPPbtO1QGLBhBUfoIIBaMAPgYgA?style=linearGradient&steps=7&angle=90 */
+    background: linear-gradient(90deg, rgba(239, 230, 218, 1.000) 0.000%, rgba(229, 215, 202, 1.000) 16.667%, rgba(218, 199, 185, 1.000) 33.333%, rgba(207, 182, 169, 1.000) 50.000%, rgba(196, 166, 153, 1.000) 66.667%, rgba(185, 150, 139, 1.000) 83.333%, rgba(175, 136, 126, 1.000) 100.000%)
+}
+
+a:hover,
+a:focus,
+
+.text-black {
+    color: #212529;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color:  rgb(72, 72, 72);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: rgb(72, 72, 72);
+}
+
+p {
+    color: rgb(30, 30, 30);
+    font-family: 'Geist-Regular', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Header and Navigation Styles */
+header {
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2); /* translucent */
+    box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
+    border-radius: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: antiquewhite;
+}
+
+.dropdown {
+    position: relative;
+    left: -60px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    transition: font-size 0.3s ease;
+    line-height: 2;
+}
+
+.dropdown-content a:hover {
+    font-size: 1.4rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Main Content Sections */
+.main-container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-1, .section-2, .section-3, .section-5 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.slider-item.active {
+    opacity: 1;
+}
+
+.slider-image-container {
+    position: relative;
+    display: inline-block; /* Crucial for width to shrink-wrap the image */
+}
+
+.slider-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.slider-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 30px;
+    z-index: 100;
+    margin: 0;
+    color: white;
+    font-family: "Nimbus Sans Becker PBla", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Slider Navigation Arrows */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 101;
+}
+
+.prev, .next {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding: 3px;
+    border-radius: 20%;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* section-2 */
+.sub-sections-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub-section-item {
+    flex: 1;
+    min-width: 240px;
+    margin-bottom: 2rem;
+    padding: 25px;
+}
+
+
+/* Section 3 Boxes */
+.box-3 {
+    padding: 40px 50px;
+}
+
+.section-3 .row {
+    display: flex;
+    gap: 2rem; /* Optional: adds space between the boxes */
+}
+
+.section-3 .box-container-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section 4 (Parallax) */
+.section-4 {
+    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-image: url("img/parallex.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 350px;
+}
+
+/* Section 5 Media */
+.section-5 .row {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 2rem; /* Optional: space between image and media */
+}
+
+.section-5 .col-lg-4 {
+    flex: 0 0 250px; /* Fixed width for image column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-5 .col-lg-8 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between media items */
+    justify-content: flex-start;
+}
+
+.fit {
+    margin-top: 50px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #666666;
+}
+
+footer p {
+    font-family: "Nimbus Sans Becker PBla", sans-serif;
+    text-decoration: none;
+}
