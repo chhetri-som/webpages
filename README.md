@@ -6,4 +6,6 @@ https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main
 
 https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main/meta%20html%20css%20project/index.html
 
+https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main/rally%20group%20b/index.html
+
 https://htmlpreview.github.io/?
