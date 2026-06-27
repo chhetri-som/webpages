@@ -1,4 +1,4 @@
-Just some webpages
+Just some webpages using HTML, CSS and vanilla Js
 
 Using 'GitHub & BitBucket HTML Preview' to view:
 
