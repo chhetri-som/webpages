@@ -10,10 +10,3 @@ https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main
 
 Rally Group B
 https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main/rally%20group%20b/index.html
-
-Web Arch
-- Login
-https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main/web%20arch/login.html
-- Registration
-https://htmlpreview.github.io/?https://github.com/chhetri-som/webpages/blob/main/web%20arch/register.html
-
