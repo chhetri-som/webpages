@@ -1,0 +1,48 @@
+artists
+
+- Ramón Nuñez | https://ramonn90.artstation.com/
+- Maojin Lee | https://maojin_lee.artstation.com/
+- Sylvain Sarrailh | https://tohad.artstation.com/
+
+
+HTML Template
+        <section id="artist" class="content-section">
+            <div class="section-heading">
+                <h1>Name</h1>
+                <p>location</p>
+            </div>
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li>skills</li>
+                </ul>
+                <h2 class="artist-heading">Software proficiency</h2>
+                <ul class="sw-list">
+                    <li>Application</li>
+                </ul>
+                <h2 class="artist-heading">Connect</h2>
+                <ul class="connect-list">
+                    <li><a href="">Social Handle</a></li>
+                </ul>
+                <div class="gallery">
+                    <div class="size-a">
+                        <img src="img/" alt="Artwork 1">
+                    </div>
+                    <div class="size-b">
+                        <img src="img/" alt="Artwork 2">
+                    </div>
+                    <div class="size-a">
+                        <img src="img/" alt="Artwork 3">
+                    </div>
+                    <div class="size-b">
+                        <img src="img/" alt="Artwork 4">
+                    </div>
+                    <div class="size-a">
+                        <img src="img/" alt="Artwork 5">
+                    </div>
+                    <div class="size-b">
+                        <img src="img/" alt="Artwork 6">
+                    </div>
+                </div>
+            </div>
+        </section>
